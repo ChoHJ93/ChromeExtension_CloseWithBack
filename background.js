@@ -6,7 +6,6 @@ chrome.storage.sync.get(['isActive'], function (result) {
 
 chrome.action.onClicked.addListener(() => {
     isActive = !isActive;
-
     chrome.action.setIcon({
         path: isActive ? {
             "16": "icons/icon16.png",
@@ -21,7 +20,6 @@ chrome.action.onClicked.addListener(() => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("background.js에서 메시지 수신:", message);
 
     if (message.action === "getStatus") {
         sendResponse({ isActive });
@@ -30,16 +28,17 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             if (tabs.length > 0) {
                 const currentTab = tabs[0];
                 const tabId = currentTab.id;
-
+				
                 chrome.tabs.remove(tabId, function () {
                     if (chrome.runtime.lastError) {
                         console.error("탭 닫기 중 오류 발생:", chrome.runtime.lastError);
-                    }
+                    } 
                 });
             }
         });
         sendResponse({ result: "탭 상태 확인 및 닫기 요청 처리 완료" });
     }
 
-    return true; 
+    return true; // 비동기 sendResponse 호출을 위해 true 반환
 });
+
