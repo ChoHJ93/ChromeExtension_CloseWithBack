@@ -23,12 +23,9 @@ This Chrome extension allows users to close a tab by pressing the mouse back but
 - **Storage**: To remember the enable/disable state of the extension across browsing sessions.
 - **Host Permissions (`<all_urls>`)**: To run the extension across all webpages and interact with the navigation history universally.
 
-Summary in Multiple Languages
+## Summary
 
-이 Chrome 확장 프로그램은 사용자가 브라우저의 히스토리가 더 이상 없는 경우 마우스의 뒤로 가기 버튼을 눌러 탭을 닫을 수 있도록 합니다.
-
-このChrome拡張機能は、ユーザーがタブの履歴がもうない場合、マウスの戻るボタンを押してタブを閉じることができます。
-
-此Chrome扩展程序允许用户在标签页没有历史记录时按鼠标的返回按钮来关闭标签页。
-
-Это расширение для Chrome позволяет пользователям закрывать вкладку, нажав на кнопку "назад" на мыши, если в истории вкладки больше нет страниц.
+- 이 Chrome 확장 프로그램은 사용자가 브라우저의 히스토리가 더 이상 없는 경우 마우스의 뒤로 가기 버튼을 눌러 탭을 닫을 수 있도록 합니다.
+- このChrome拡張機能は、ユーザーがタブの履歴がもうない場合、マウスの戻るボタンを押してタブを閉じることができます。
+- 此Chrome扩展程序允许用户在标签页没有历史记录时按鼠标的返回按钮来关闭标签页。
+- Это расширение для Chrome позволяет пользователям закрывать вкладку, нажав на кнопку "назад" на мыши, если в истории вкладки больше нет страниц.
